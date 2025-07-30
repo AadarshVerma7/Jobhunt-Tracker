@@ -2,6 +2,8 @@ import React from 'react'
 import homeImg from '../assets/homeImg.png'
 import users from '../assets/users.png'
 import productHunt from '../assets/productHunt.png'
+import searchSvg from '../assets/search-svg.svg'
+import diamond from '../assets/diamond.svg'
 
 import wix from '../assets/wix.png'
 import zillow from '../assets/zillow.png'
@@ -62,11 +64,30 @@ const Home = () => {
 
 
         {/* find jobs section  */}
-        <div>
-            <h1 className='ml-40 text-6xl font-semibold'>Popular Jobs</h1>
-            <input type="text" placeholder='Search for company'
-                className='ml-40 mt-7 border border-[#b1aeea] rounded-2xl'
-            />
+        <h1 className='ml-40 text-6xl font-semibold'>Popular Jobs</h1>
+        <div className='flex mb-10'>
+                <div className='flex mt-5 gap-3'>
+                    <img src={searchSvg} alt="searchSvg" 
+                    className='h-7 mt-4 ml-40 flex justify-center items-center'
+                    />
+                    <input type="text" placeholder='Search for a company'
+                        className='w-full h-14 px-0 py-4 border-0 border-b-2 border-gray-300 text-lg placeholder-gray-400 
+                        bg-transparent focus:outline-none focus:border-blue-500 transform 
+                        transition-all duration-300 focus:scale-[1.01] disabled:opacity-50 
+                        disabled:cursor-not-allowed'
+                    />
+                </div>
+                <div className='flex gap-3 mt-5 ml-6'>
+                    <img src={diamond} alt="loaction" 
+                        className='h-7 mt-4'
+                    />
+                    <input type="text" placeholder='Location' 
+                        className='w-full h-14 px-0 py-4 border-0 border-b-2 border-gray-300 text-lg placeholder-gray-400 
+                        bg-transparent focus:outline-none focus:border-blue-500 transform 
+                        transition-all duration-300 focus:scale-[1.01] disabled:opacity-50 
+                        disabled:cursor-not-allowed'
+                    />
+                </div>
         </div>
     </>
   )
