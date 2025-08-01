@@ -11,6 +11,7 @@ import microsoft from '../assets/microsoft.png'
 import amazon from '../assets/amazon.png'
 import github from '../assets/github.png'
 import kia from '../assets/kia.jpg'
+import JobCardGrid from '../Components/JobCardGrid'
 
 const Home = () => {
   return (
@@ -88,6 +89,10 @@ const Home = () => {
                         disabled:cursor-not-allowed'
                     />
                 </div>
+        </div>
+
+        <div>
+            <JobCardGrid />
         </div>
     </>
   )
